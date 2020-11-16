@@ -1,0 +1,42 @@
+
+.menuContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin: 0px 40px;
+  align-self: center;
+  height: 250px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 200px;
+}
+
+.logoTxt {
+  margin: 0;
+  color: white;
+}
+
+.optionsContainer .logoTxt:hover {
+  transition: 0.5s;
+  color: var(--light-green);
+}
+
+.logoTxtContainer {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.optionsContainer {
+  display: flex;
+  align-items: center;
+}

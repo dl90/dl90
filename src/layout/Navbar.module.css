@@ -1,0 +1,42 @@
+.logoSM {
+  height: 50px;
+}
+
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  background-color: var(--light-yellow);
+  height: 70px;
+  display: flex;
+
+  transform: translateY(-70px);
+  transition-duration: 600ms;
+}
+
+.section {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menuSelection {
+  display: flex;
+}
+
+.link {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.link:hover {
+  transition: 0.5s;
+  color: var(--light-green);
+}
+
+.show {
+  transform: translateY(0px);
+}
