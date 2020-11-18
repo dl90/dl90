@@ -1,0 +1,12 @@
+.iconContainer {
+  background-color: white;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 7px;
+}
+.iconContainer img {
+  height: 85%;
+  width: 85%;
+  margin: auto;
+}

@@ -1,6 +1,5 @@
 import Navbar from './layout/Navbar'
-import Menu from './components/Menu'
-import s from './App.module.css'
+import Body from './layout/Body'
 
 function App () {
   const options = [
@@ -10,9 +9,9 @@ function App () {
   ]
 
   return (
-    <div className={s.gridContainer}>
+    <div>
       <Navbar selection={options} />
-      <Menu selection={options} />
+      <Body options={options} />
     </div>
   )
 }

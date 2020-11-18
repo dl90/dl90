@@ -1,12 +1,13 @@
 import React from 'react'
 import s from './Menu.module.css'
+import logoLG from '../../assets/logo/logo-lg.png'
 
 export default function Menu (props) {
   return (
     <section>
       <div className={s.menuContainer}>
         <div className={s.logoContainer}>
-          <img src='/logo-lg.png' alt='personal-logo' className={s.logoImg} />
+          <img src={logoLG} alt='personal-logo' className={s.logoImg} />
           <div className={s.logoTxtContainer}>
             <h3 className={s.logoTxt}>Full</h3>
             <h3 className={s.logoTxt}>Stack</h3>

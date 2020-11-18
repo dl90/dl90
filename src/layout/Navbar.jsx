@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import s from './Navbar.module.css'
+import logoSM from '../assets/logo/logo-sm.png'
 
 export default function Navbar (props) {
   const [showNav, setShowNav] = useState(false)
@@ -24,7 +25,7 @@ export default function Navbar (props) {
   return (
     <div className={s.navbarContainer} id='nav'>
       <div className={s.section}>
-        <img src='/logo-sm.png' alt='personal logo' className={s.logoSM} />
+        <img src={logoSM} alt='personal logo' className={s.logoSM} />
         <MenuSelection options={props.selection} />
       </div>
     </div>

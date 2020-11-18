@@ -1,6 +1,6 @@
 .gridContainer {
   display: grid;
   grid-template-columns: auto;
-  gap: 5vh;
+  gap: 80vh;
   justify-items: center;
 }

@@ -1,0 +1,22 @@
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.iconGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-auto-flow: row;
+  gap: 10px;
+}
+
+.img {
+  width: 300px;
+}
