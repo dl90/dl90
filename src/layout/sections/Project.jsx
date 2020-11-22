@@ -1,17 +1,24 @@
 import React from 'react'
 import s from './Project.module.css'
 
-import Card from '../../components/Card'
-import js from '../../assets/icon/js.svg'
-import redesignImg1 from '../../assets/image/redesign/1.png'
-
+import Lendr from '../../assets/01_lendr/index'
+import Redesign from '../../assets/02_redesign/index'
+import Game from '../../assets/03_game/index'
+import Flask from '../../assets/04_flask/index'
+import Sampoll from '../../assets/05_sampoll/index'
 
 export default function Project () {
   return (
-    <section>
-      <h1>Projects</h1>
-      <div className={s.projectsContainer}>
-        <Card title='Redesign' icons={[js]} img={redesignImg1} description='This project involved redesigning and porting an old static site to vue' />
+    <section id='Project'>
+      <h1 className='sectionTitle'>Projects</h1>
+      <div className='content'>
+        <div className={s.projectGrid}>
+          <Lendr />
+          <Redesign />
+          <Game />
+          <Flask />
+          <Sampoll />
+        </div>
       </div>
     </section>
   )

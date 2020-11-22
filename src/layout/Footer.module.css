@@ -1,0 +1,16 @@
+footer {
+  background-color: var(--dark-red);
+  color: white;
+  height: 100px;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.copyright {
+  margin: 0;
+}

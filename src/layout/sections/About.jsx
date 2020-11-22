@@ -4,9 +4,9 @@ import img from '../../assets/image/about/1.jpg'
 
 export default function About (props) {
   return (
-    <section>
-      <h1 className={s.heading}>About</h1>
-      <div className={s.container}>
+    <section id='About'>
+      <h1 className='sectionTitle'>About</h1>
+      <div className='content'>
         <div className={s.imgContainer}>
           <img src={img} className={s.img} />
         </div>

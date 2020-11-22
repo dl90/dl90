@@ -22,18 +22,15 @@ export default function Navbar (props) {
       : nav.classList.remove(s.show)
   }, [showNav])
 
+  const options = props.selection.map((item, idx) =>
+    <h5 key={idx} className={s.link}>{item}</h5>)
+
   return (
-    <div className={s.navbarContainer} id='nav'>
+    <nav className={s.navbarContainer} id='nav'>
       <div className={s.section}>
         <img src={logoSM} alt='personal logo' className={s.logoSM} />
-        <MenuSelection options={props.selection} />
+        <div className={s.menuSelection}>{options}</div>
       </div>
-    </div>
+    </nav>
   )
-}
-
-function MenuSelection (props) {
-  const options = props.options.map((item, idx) =>
-    <h5 key={idx} className={s.link}>{item}</h5>)
-  return <div className={s.menuSelection}>{options}</div>
 }

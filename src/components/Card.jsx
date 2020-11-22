@@ -9,12 +9,13 @@ export default function Card (props) {
 
   return (
     <div>
-      <div className={s.cardContainer} >
-        <img src={props.img} className={s.img} />
-        <div className={s.content} >
-          <h2>{props.title}</h2>
+      <div className={s.cardContainer}>
+        <img src={props.img} className={s.img} alt='Project screenshot' />
+        <div className={s.content}>
+          <h3 className={s.title}>{props.title}</h3>
           <p>{props.description}</p>
-          <div className={s.iconGrid} >
+          <a className={s.link} href={props.repo}>Github</a>
+          <div className={s.iconGrid}>
             {icons}
           </div>
         </div>

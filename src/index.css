@@ -8,6 +8,7 @@
   --light-yellow: #f7f9e7;
   --yellow: #fce089;
   --light-green: #819665;
+  --dark-red: #321c1c;
 
   --font-size-title: 64px;
   --font-size-nav: 20px;
@@ -26,7 +27,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   width: 100vw;
-  height: 1000vh;
   background-color: var(--background);
   box-sizing: border-box;
 }
@@ -35,7 +35,20 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
