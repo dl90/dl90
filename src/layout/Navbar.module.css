@@ -8,11 +8,13 @@
   right: 0;
   width: 100vw;
   background-color: var(--light-yellow);
-  height: 70px;
+  height: var(--navbar-offset);
   display: flex;
 
   transform: translateY(-70px);
-  transition-duration: 600ms;
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+  filter: drop-shadow(0 2px 8px rgb(0, 0, 0));
 }
 
 .section {

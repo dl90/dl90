@@ -22,7 +22,7 @@ hr {
 
 .logoTxt {
   margin: 0;
-  color: white;
+  color: var(--text);
 }
 
 .optionsContainer .logoTxt:hover {

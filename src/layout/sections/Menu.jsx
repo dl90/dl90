@@ -3,14 +3,8 @@ import s from './Menu.module.css'
 import logoLG from '../../assets/logo/logo-lg.png'
 
 export default function Menu (props) {
-  // const scroll = () => {
-  //   const el = document.querySelector('#About')
-  //   const y = el.getBoundingClientRect().top + window.pageYOffset - 100
-  //   window.scrollTo({ top: y, behavior: 'smooth' })
-  // }
-
   const options = props.selection.map((item, idx) =>
-    <h1 key={idx} className={s.logoTxt}>{item}</h1>)
+    <h1 key={idx} className={s.logoTxt} onClick={() => { props.refProps[item]?.current?.scrollIntoView() }}>{item}</h1>)
 
   return (
     <section>

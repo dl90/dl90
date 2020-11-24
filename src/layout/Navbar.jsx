@@ -23,7 +23,7 @@ export default function Navbar (props) {
   }, [showNav])
 
   const options = props.selection.map((item, idx) =>
-    <h5 key={idx} className={s.link}>{item}</h5>)
+    <h6 key={idx} className={s.link} onClick={() => { props.refProps[item]?.current?.scrollIntoView() }}>{item}</h6>)
 
   return (
     <nav className={s.navbarContainer} id='nav'>

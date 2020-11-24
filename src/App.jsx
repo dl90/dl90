@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import Navbar from './layout/Navbar'
 import Body from './layout/Body'
@@ -7,13 +7,18 @@ import Footer from './layout/Footer'
 function App () {
   const options = [
     'About',
-    'Projects'
+    'Projects',
+    'Contact'
   ]
+  const About = useRef(null)
+  const Projects = useRef(null)
+  const Contact = useRef(null)
+  const refs = { About, Projects, Contact }
 
   return (
     <div>
-      <Navbar selection={options} />
-      <Body options={options} />
+      <Navbar selection={options} refProps={refs} />
+      <Body options={options} refProps={refs} />
       <Footer />
     </div>
   )

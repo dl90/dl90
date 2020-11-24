@@ -1,7 +1,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: auto;
-  gap: 80vh;
+  gap: 50vh;
   justify-items: center;
 }
 
@@ -17,6 +17,7 @@
 
 section {
   width: 100vw;
+  color: var(--text)
 }
 
 @media (max-width: 750px) {
