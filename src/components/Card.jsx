@@ -1,6 +1,8 @@
 import React from 'react'
-import Icon from './Icon'
 import s from './Card.module.css'
+
+import Icon from './Icon'
+import Slider from './Slider'
 
 export default function Card (props) {
   const icons = props.icons.map((img, idx) => {
@@ -10,7 +12,7 @@ export default function Card (props) {
   return (
     <div>
       <div className={s.cardContainer}>
-        <img src={props.img} className={s.img} alt='Project screenshot' />
+        <Slider images={props.images} />
         <div className={s.content}>
           <h3 className={s.title}>{props.title}</h3>
           <p>{props.description}</p>

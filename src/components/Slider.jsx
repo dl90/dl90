@@ -1,16 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import s from './Slider.module.css'
 
-import img1 from '../assets/02_redesign/img/1.png'
-import img2 from '../assets/02_redesign/img/2.png'
-import img3 from '../assets/02_redesign/img/3.png'
-import img4 from '../assets/02_redesign/img/4.png'
+export default function Slider (props) {
+  const slider = useRef(null)
+  const prev = () => slider.current.scrollBy({ left: -300, behavior: 'smooth' })
+  const next = () => slider.current.scrollBy({ left: 300, behavior: 'smooth' })
+  useEffect(() => slider.current.scrollBy({ left: 0 }), [])
 
-export default function Slider () {
-  const imgs = [img1, img2, img3, img4]
   return (
-    <div className={s.slider}>
-      {imgs.map((img, idx) => <img key={idx} src={img} className={s.slide} style={{ transform: `translateX(${idx}%)` }} />)}
+    <div className={s.sliderContainer}>
+      <button onClick={prev}>&#60;</button>
+      <div className={s.slider} ref={slider}>
+        {props.images.map((img, idx) => <img key={idx} src={img} className={s.slide} />)}
+      </div>
+      <button onClick={next}>&#62;</button>
     </div>
   )
 }

@@ -13,6 +13,8 @@ export default function Project () {
   const desc =
     'Team project created in association with 4 design students. Currently under development. '
   const repo = 'https://github.com/dl90/lendr'
+  const icons = [js, node, mysql, aws, react]
+  const images = [img1]
 
-  return <Card title='Lendr' icons={[js, node, mysql, aws, react]} img={img1} description={desc} repo={repo} />
+  return <Card title='Lendr' icons={icons} images={images} description={desc} repo={repo} />
 }
