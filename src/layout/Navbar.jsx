@@ -23,12 +23,19 @@ export default function Navbar (props) {
   }, [showNav])
 
   const options = props.selection.map((item, idx) =>
-    <h6 key={idx} className={s.link} onClick={() => { props.refProps[item]?.current?.scrollIntoView() }}>{item}</h6>)
+    <h6 key={idx} className={s.link} onClick={() => props.refProps[item]?.current?.scrollIntoView()}>
+      {item}
+    </h6>)
+
+  const scrollTop = () => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
 
   return (
     <nav className={s.navbarContainer} id='nav'>
       <div className={s.section}>
-        <img src={logoSM} alt='personal logo' className={s.logoSM} />
+        <img src={logoSM} alt='personal logo' className={s.logoSM} onClick={scrollTop} />
         <div className={s.menuSelection}>{options}</div>
       </div>
     </nav>

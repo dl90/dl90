@@ -14,7 +14,7 @@ export default function About (props) {
   return (
     <div className={s.aboutContainer}>
       <div className={s.imgContainer}>
-        <img src={img} className={s.img} />
+        <img src={img} className={s.img} alt='it is I' />
       </div>
       <div className={s.txtContainer}>
         {desc.map((content, idx) => <p key={idx}>{content}</p>)}

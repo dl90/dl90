@@ -11,7 +11,7 @@ import flask from '../icon/flask.png'
 
 export default function Project () {
   const desc =
-    'Flask server that allows users to search for music artists and save them.'
+    'Flask server that allows users to search for music artists and save them to revisit later.'
   const repo = 'https://github.com/dl90/Flask'
   const icons = [py, flask]
   const images = [img1, img2, img3, img4]

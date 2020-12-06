@@ -12,7 +12,7 @@ import node from '../icon/node.png'
 
 export default function Project () {
   const desc =
-    'My first project using MySQL, intended to schedule meetings. Not the cleanest but was a great learning experience.'
+    'First project working with MySQL, intended to schedule meetings. Not the cleanest but was a great learning experience.'
   const repo = 'https://github.com/dl90/scheduler'
   const icons = [js, mysql, node]
   const images = [img1, img2, img3, img4]

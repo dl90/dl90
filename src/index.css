@@ -17,6 +17,8 @@
 
   --navbar-offset: 60px;
   cursor: default;
+
+  --quick-transition: 0.5s;
 }
 
 body {
@@ -44,7 +46,7 @@ section {
 }
 
 img {
-  pointer-events: none;
+  /* pointer-events: none; */
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -84,7 +86,13 @@ h6 {
   font-size: 26px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  width: max-content;
+  color: var(--yellow);
+  text-decoration: none;
+  cursor: default;
+}
+
+a:hover {
+  color: var(--text);
 }

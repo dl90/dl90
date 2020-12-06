@@ -1,5 +1,11 @@
 .logoSM {
   height: 50px;
+  opacity: 0.7;
+}
+
+.logoSM:hover {
+  opacity: 1;
+  transition: var(--quick-transition);
 }
 
 .navbarContainer {
@@ -12,7 +18,7 @@
   display: flex;
 
   transform: translateY(-70px);
-  transition: transform 0.5s;
+  transition: transform var(--quick-transition);
   transition-timing-function: ease-in-out;
   filter: drop-shadow(0 2px 8px rgb(0, 0, 0));
 }
@@ -35,7 +41,7 @@
 }
 
 .link:hover {
-  transition: 0.5s;
+  transition: var(--quick-transition);
   color: var(--light-green);
 }
 

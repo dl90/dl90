@@ -5,35 +5,45 @@
 }
 
 .slider {
-  width: 300px;
+  height: 65vh;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   overflow-x: hidden;
-
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(300px);
   scroll-snap-type: x mandatory;
 }
 
 .slider img {
-    scroll-snap-align: start;
+  scroll-snap-align: center;
+  padding: 25%;
 }
 
-button {
-  background-color: white;
-  opacity: 0.1;
+.btn {
   background-repeat:no-repeat;
   border: none;
   overflow: hidden;
   outline:none;
-  color: black;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text);
+  font-weight: 700;
+  padding: 10px 10px;
+  border-radius: 3px;
+
+  background-color: var(--background);
+  opacity: 0.3;
 }
 
-button:hover {
+.btn:hover {
   opacity: 0.5;
 }
 
 .slide {
-  width: 100%
+  display: block;
+  max-width: 100%;
+  max-height:90%;
+  width: auto;
+  height: auto;
 }

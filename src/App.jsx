@@ -1,26 +1,31 @@
-import React, { useRef } from 'react'
+import React, { useRef, useContext } from 'react'
+import Provider, { Context } from './context/provider'
 
 import Navbar from './layout/Navbar'
 import Body from './layout/Body'
 import Footer from './layout/Footer'
 
 function App () {
+  const context = useContext(Context)
+  console.log(context)
+
   const options = [
     'About',
     'Projects',
     'Contact'
   ]
-  const About = useRef(null)
-  const Projects = useRef(null)
-  const Contact = useRef(null)
-  const refs = { About, Projects, Contact }
+  const refs = {
+    About: useRef(null),
+    Projects: useRef(null),
+    Contact: useRef(null)
+  }
 
   return (
-    <div>
+    <Provider>
       <Navbar selection={options} refProps={refs} />
       <Body options={options} refProps={refs} />
       <Footer />
-    </div>
+    </Provider>
   )
 }
 
