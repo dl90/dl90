@@ -7,7 +7,7 @@ export default function About (props) {
   const desc = [
     'Hi, this is Don. I am currently attending BCIT’s Full Stack Web Development program, expecting to graduate in June, 2021.',
     "Over the course of this program, I've had the pleasure to work on numerous team-based projects dealing with both the front-end and the backend. This experience had helped me understand the structure of web applications, how each part interacts with one another, and how to work effectively in a fast-paced, team-based environment",
-    'Some examples of these projects can be found listed below. They may not be the most polished, but does share insight on my learning progression.',
+    'Some examples of these projects can be found below.',
     'Cheers'
   ]
 

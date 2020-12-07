@@ -17,7 +17,7 @@ export default function Card (props) {
       <Modal isShowing={isShowing} hide={toggle} images={props.images} title={props.title} />
       <div className={s.cardContainer}>
         <div className={s.imgContainer}>
-          <img src={props.images[0]} onClick={toggle} className={s.img} />
+          <img src={props.images[0]} onClick={toggle} className={s.img} alt='project screenshots' />
         </div>
         <div className={s.content}>
           <h3 className={s.title}>{props.title}</h3>
