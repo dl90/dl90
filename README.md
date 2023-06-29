@@ -1,4 +1,4 @@
-# 🧑‍💻 ![visitors](https://visitor-badge.glitch.me/badge?page_id=dl90.readme)
+# 🧑‍💻
 
 <details close>
 <summary>Waka stats (since Nov 29 2020)</summary>
